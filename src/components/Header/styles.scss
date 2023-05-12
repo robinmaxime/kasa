@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    a {
+        color: $mainColor;
+    }
+}
