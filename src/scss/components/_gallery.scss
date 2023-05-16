@@ -1,0 +1,8 @@
+.gallery {
+    background-color: $galleryBgColor;
+    border-radius: 25px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+}
