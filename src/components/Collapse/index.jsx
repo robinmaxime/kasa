@@ -1,9 +1,12 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-
+/**
+ * Composant créant une boite de texte ouvrable et fermable
+ * @param {string} title titre de la boite
+ * @param {string} description texte apparant quand la boite est ouverte
+ */
 function Collapse({ title, description }) {
     const [isOpen, setIsOpen] = useState(false);
-
     return (
         <div className="collapse">
             <div

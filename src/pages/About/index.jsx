@@ -1,6 +1,9 @@
 import Banner from "../../components/Banner";
 import Collapse from "../../components/Collapse";
 
+/**
+ * Composant affichant la page "à propos"
+ */
 function About() {
     return (
         <main>

@@ -1,5 +1,10 @@
 import PropTypes from "prop-types";
-
+/**
+ * Composant affichant une bannière image avec un texte au centre
+ * @param {string} image nom du fichier sans extension dans le dossier asset/banner
+ * @param {string} title titre optionnel s'affichant au centre de l'image
+ * @param {string} alt description de l'image
+ */
 function Banner({ image, title, alt }) {
     return (
         <div className="banner">

@@ -1,5 +1,8 @@
 import { NavLink } from "react-router-dom";
 
+/**
+ * Composant affichant l'entête de page (logo et menu)
+ */
 function Header() {
     return (
         <header className="header">

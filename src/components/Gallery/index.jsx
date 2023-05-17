@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import GalleryItem from "../GalleryItem";
 
+/**
+ * Composant affichant la galerie des logements disponibles
+ */
 function Gallery() {
     const [accomodation, setAccomodation] = useState([]);
     const [isError, setIsError] = useState(false);

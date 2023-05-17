@@ -1,3 +1,6 @@
+/**
+ * Composant affichant le pied de page
+ */
 function Footer() {
     return (
         <footer>

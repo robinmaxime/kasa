@@ -1,5 +1,10 @@
 import PropTypes from "prop-types";
 
+/**
+ * Composant affichant une card logement
+ * @param {string} title description du logement
+ * @param {string} cover url de l'image du logement
+ */
 function GalleryItem({ title, cover }) {
     return (
         <div className="gallery-item">

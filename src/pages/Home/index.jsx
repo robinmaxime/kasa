@@ -1,6 +1,9 @@
 import Banner from "../../components/Banner";
 import Gallery from "../../components/Gallery";
 
+/**
+ * Composant affichant la page d'accueil
+ */
 function Home() {
     return (
         <div>
