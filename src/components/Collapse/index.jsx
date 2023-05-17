@@ -18,7 +18,7 @@ function Collapse({ title, description }) {
                     className={`collapse__icon ${
                         isOpen ? "collapse__icon--reverse" : null
                     }`}
-                    src="./assets/arrow.png"
+                    src="/assets/arrow.png"
                     alt="flêche"
                 />
             </div>

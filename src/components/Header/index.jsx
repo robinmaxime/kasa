@@ -8,9 +8,9 @@ function Header() {
         <header className="header">
             <img
                 className="header__img"
-                src="./assets/logo/logo210w.png"
+                src="/assets/logo/logo210w.png"
                 alt="Logo de Kasa"
-                srcSet="./assets/logo/logo420w.png 2x"
+                srcSet="/assets/logo/logo420w.png 2x"
             />
             <nav className="header__nav">
                 <NavLink to="/">Accueil</NavLink>

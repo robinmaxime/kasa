@@ -10,12 +10,12 @@ function Banner({ image, title, alt }) {
         <div className="banner">
             <picture>
                 <source
-                    srcSet={`./assets/banner/${image}.webp`}
+                    srcSet={`/assets/banner/${image}.webp`}
                     type="image/webp"
                 />
                 <img
                     className="banner__img"
-                    src={`./assets/banner/${image}.jpg`}
+                    src={`/assets/banner/${image}.jpg`}
                     alt={alt}
                 />
             </picture>
