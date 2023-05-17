@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 function Collapse({ title, description }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,11 +12,9 @@ function Collapse({ title, description }) {
             >
                 <h2 className="collapse__title">{title}</h2>
                 <img
-                    className={
-                        isOpen
-                            ? "collapse__icon collapse__icon--reverse"
-                            : "collapse__icon"
-                    }
+                    className={`collapse__icon ${
+                        isOpen ? "collapse__icon--reverse" : null
+                    }`}
                     src="./assets/arrow.png"
                     alt="flêche"
                 />
@@ -26,5 +25,10 @@ function Collapse({ title, description }) {
         </div>
     );
 }
+
+Collapse.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+};
 
 export default Collapse;

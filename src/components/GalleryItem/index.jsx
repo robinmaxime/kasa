@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function GalleryItem({ title, cover }) {
     return (
         <div className="gallery-item">
@@ -6,5 +8,10 @@ function GalleryItem({ title, cover }) {
         </div>
     );
 }
+
+GalleryItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    cover: PropTypes.string,
+};
 
 export default GalleryItem;
