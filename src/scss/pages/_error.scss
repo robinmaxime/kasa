@@ -1,0 +1,21 @@
+.error {
+    color: $primaryColor;
+    text-align: center;
+    margin-top: 100px;
+
+    &__type {
+        font-weight: 700;
+        font-size: 288px;
+        margin-bottom: 35px;
+    }
+
+    &__description {
+        font-size: 36px;
+        margin-bottom: 182px;
+    }
+
+    &__link {
+        color: $primaryColor;
+        font-size: 18px;
+    }
+}
