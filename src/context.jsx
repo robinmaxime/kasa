@@ -5,6 +5,7 @@ export const AccomodationContext = createContext();
 export const AccomodationProvider = ({ children }) => {
     const [accomodation, setAccomodation] = useState([]);
     const [isError, setIsError] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         async function loadData() {
@@ -15,12 +16,16 @@ export const AccomodationProvider = ({ children }) => {
             } catch (err) {
                 setIsError(true);
             }
+            setIsLoading(false);
         }
+        setIsLoading(true);
         loadData();
     }, []);
 
     return (
-        <AccomodationContext.Provider value={{ accomodation, isError }}>
+        <AccomodationContext.Provider
+            value={{ accomodation, isError, isLoading }}
+        >
             {children}
         </AccomodationContext.Provider>
     );

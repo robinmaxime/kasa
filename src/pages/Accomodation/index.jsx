@@ -6,12 +6,14 @@ import Stars from "../../components/Stars/index.jsx";
 import Host from "../../components/Host/index.jsx";
 import Error from "../Error/index.jsx";
 import { AccomodationContext } from "../../context.jsx";
+import Slideshow from "../../components/Slideshow/index.jsx";
 
 function Accomodation() {
     //récupère dans l'url l'id passé en paramètre
     const { accomodationId } = useParams();
     //récupère l'ensemble des données des logements depuis le contexte
     const { accomodation, isError } = useContext(AccomodationContext);
+
     //cherche l'élément correspond à l'ID dans l'ensemble des logements (soit objet, soit undefined)
     const data = accomodation.find((item) => {
         return item.id === accomodationId;
@@ -21,11 +23,7 @@ function Accomodation() {
         <Error />
     ) : (
         <div className="accomodation">
-            <img
-                className="accomodation__carousel"
-                src={data.cover}
-                alt={data.title}
-            />
+            <Slideshow pictures={data.pictures} />
             <div className="accomodation__info">
                 <div className="accomodation__title">
                     <h1>{data.title}</h1>
@@ -42,8 +40,8 @@ function Accomodation() {
                 <Collapse title="Description" description={data.description} />
                 <Collapse
                     title="Équipements"
-                    description={data.equipments.map((item) => (
-                        <p>{item}</p>
+                    description={data.equipments.map((item, index) => (
+                        <p key={`equipments-${index}`}>{item}</p>
                     ))}
                 />
             </div>

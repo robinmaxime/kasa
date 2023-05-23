@@ -1,13 +1,6 @@
 .accomodation {
     display: flex;
     flex-direction: column;
-    &__carousel {
-        border-radius: 25px;
-        height: 415px;
-        width: 100%;
-        object-fit: cover;
-        margin-bottom: 30px;
-    }
 
     &__info {
         display: flex;

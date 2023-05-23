@@ -23,7 +23,7 @@ function Collapse({ title, description }) {
                 />
             </div>
             {isOpen ? (
-                <p className="collapse__description">{description}</p>
+                <div className="collapse__description">{description}</div>
             ) : null}
         </div>
     );
