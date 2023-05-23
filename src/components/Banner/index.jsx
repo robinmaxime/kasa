@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+
 /**
  * Composant affichant une bannière image avec un texte au centre
  * @param {string} image nom du fichier sans extension dans le dossier asset/banner

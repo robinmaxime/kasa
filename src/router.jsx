@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { AccomodationProvider } from "./context";
 import Home from "./pages/Home";
 import Accomodation from "./pages/Accomodation";
 import About from "./pages/About";
@@ -11,15 +12,17 @@ function Router() {
         <BrowserRouter>
             <div className="page-container">
                 <Header />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route
-                        path="/accomodation/:accomodationId"
-                        element={<Accomodation />}
-                    />
-                    <Route path="/about" element={<About />} />
-                    <Route path="*" element={<Error />} />
-                </Routes>
+                <AccomodationProvider>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route
+                            path="/accomodation/:accomodationId"
+                            element={<Accomodation />}
+                        />
+                        <Route path="/about" element={<About />} />
+                        <Route path="*" element={<Error />} />
+                    </Routes>
+                </AccomodationProvider>
             </div>
             <Footer />
         </BrowserRouter>

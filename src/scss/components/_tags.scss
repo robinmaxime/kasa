@@ -1,0 +1,17 @@
+.tags {
+    display: flex;
+    gap: 10px;
+
+    &__item {
+        display: flex;
+        height: 25px;
+        min-width: 115px;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        background-color: $primaryColor;
+        border-radius: 10px;
+        color: white;
+        padding: 3px 15px;
+    }
+}

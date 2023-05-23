@@ -1,0 +1,9 @@
+.stars {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+
+    &__item {
+        height: 24px;
+    }
+}
