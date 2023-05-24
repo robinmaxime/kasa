@@ -31,7 +31,7 @@ function Accomodation() {
                     <Tags list={data.tags} />
                 </div>
 
-                <div>
+                <div className="accomodation__host">
                     <Host name={data.host.name} photo={data.host.picture} />
                     <Stars rating={parseInt(data.rating)} />
                 </div>

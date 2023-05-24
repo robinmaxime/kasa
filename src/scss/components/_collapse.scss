@@ -18,6 +18,12 @@
 
     &__title {
         font-size: 24px;
+        @media screen and (max-width: 600px) {
+            font-size: 13px;
+        }
+        @media screen and (min-width: 601px) and (max-width: 992px) {
+            font-size: 18px;
+        }
     }
 
     &__description {
@@ -25,10 +31,24 @@
         padding: 27px 18px 18px 18px;
         font-weight: 400;
         font-size: 24px;
+        @media screen and (max-width: 600px) {
+            padding: 17px 11px 11px 11px;
+            font-size: 13px;
+        }
+        @media screen and (min-width: 601px) and (max-width: 992px) {
+            padding: 20px 15px 15px 15px;
+            font-size: 18px;
+        }
     }
 
     &__icon {
         width: 24px;
+        @media screen and (max-width: 600px) {
+            width: 16px;
+        }
+        @media screen and (min-width: 601px) and (max-width: 992px) {
+            width: 20px;
+        }
 
         &--reverse {
             transform: rotate(180deg);

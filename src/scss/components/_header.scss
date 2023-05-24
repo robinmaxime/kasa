@@ -3,20 +3,45 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 63px;
+    @media screen and (max-width: 600px) {
+        margin-bottom: 16px;
+    }
+    @media screen and (min-width: 601px) and (max-width: 992px) {
+        margin-bottom: 30px;
+    }
 
     &__img {
         width: 210px;
+        @media screen and (max-width: 600px) {
+            width: 145px;
+        }
+        @media screen and (min-width: 601px) and (max-width: 992px) {
+            width: 175px;
+        }
     }
 
     &__nav {
         display: flex;
-        gap: 57px;
+        gap: 63px;
+        @media screen and (max-width: 600px) {
+            gap: 15px;
+        }
+        @media screen and (min-width: 601px) and (max-width: 992px) {
+            gap: 20px;
+        }
         a {
             color: $primaryColor;
             font-size: 24px;
             text-decoration: none;
             border-bottom: 1px solid transparent;
             transition: border-color 0.3s linear;
+            @media screen and (max-width: 600px) {
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+            @media screen and (min-width: 601px) and (max-width: 992px) {
+                font-size: 20px;
+            }
         }
         a.active {
             border-color: $primaryColor;

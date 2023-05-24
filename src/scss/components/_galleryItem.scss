@@ -4,6 +4,10 @@
     border-radius: 10px;
     overflow: hidden;
     aspect-ratio: 1/1;
+    @media screen and (max-width: 600px) {
+        aspect-ratio: unset;
+        height: 255px;
+    }
 
     &__title {
         display: flex;

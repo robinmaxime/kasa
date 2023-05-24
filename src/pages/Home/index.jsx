@@ -6,7 +6,7 @@ import Gallery from "../../components/Gallery";
  */
 function Home() {
     return (
-        <div>
+        <div className="home">
             <Banner
                 image="banner1240w"
                 title="Chez vous, partout et ailleurs"

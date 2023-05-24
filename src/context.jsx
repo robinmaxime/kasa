@@ -10,7 +10,7 @@ export const AccomodationProvider = ({ children }) => {
     useEffect(() => {
         async function loadData() {
             try {
-                const response = await fetch("./logements.json");
+                const response = await fetch("/logements.json");
                 const data = await response.json();
                 setAccomodation(data);
             } catch (err) {
