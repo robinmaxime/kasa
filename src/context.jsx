@@ -5,7 +5,7 @@ export const AccomodationContext = createContext();
 export const AccomodationProvider = ({ children }) => {
     const [accomodation, setAccomodation] = useState([]);
     const [isError, setIsError] = useState(false);
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         async function loadData() {
@@ -18,7 +18,6 @@ export const AccomodationProvider = ({ children }) => {
             }
             setIsLoading(false);
         }
-        setIsLoading(true);
         loadData();
     }, []);
 
