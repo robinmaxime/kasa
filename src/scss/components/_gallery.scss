@@ -18,3 +18,8 @@
         gap: 20px;
     }
 }
+
+.gallery--loading {
+    grid-template-columns: 1fr;
+    min-height: 300px;
+}

@@ -109,4 +109,9 @@
             }
         }
     }
+
+    // modifie les classes SCSS du composant Loader
+    .loader {
+        min-height: 300px;
+    }
 }
