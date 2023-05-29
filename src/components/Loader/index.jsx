@@ -1,3 +1,8 @@
+/**
+ * Composant affichant une animation de chargement
+ * @return JSX.element
+ */
+
 function Loader() {
     return (
         <div className="loader">

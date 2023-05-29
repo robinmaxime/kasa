@@ -2,6 +2,10 @@ import { createContext, useState, useEffect } from "react";
 
 export const AccomodationContext = createContext();
 
+/**
+ * Context permettant de charger et de partager la liste des logements
+ * @return JSX.element
+ */
 export const AccomodationProvider = ({ children }) => {
     const [accomodation, setAccomodation] = useState([]);
     const [isError, setIsError] = useState(false);

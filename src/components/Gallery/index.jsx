@@ -5,6 +5,7 @@ import Loader from "../Loader";
 
 /**
  * Composant affichant la galerie des logements disponibles
+ * @return JSX.element
  */
 function Gallery() {
     const { accomodation, isError, isLoading } =

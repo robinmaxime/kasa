@@ -1,5 +1,6 @@
 /**
  * Composant affichant le pied de page
+ * @return JSX.element
  */
 function Footer() {
     return (

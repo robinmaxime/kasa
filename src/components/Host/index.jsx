@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
  * Composant affichant le profil d'un hébergeur
  * @param {string} name Nom de l'hébergeur
  * @param {string} photo url de la photo de l'hébergeur
+ * @return JSX.element
  */
 function Host({ name, photo }) {
     return (

@@ -3,6 +3,7 @@ import Collapse from "../../components/Collapse";
 
 /**
  * Composant affichant la page "à propos"
+ * @return JSX.element
  */
 function About() {
     return (

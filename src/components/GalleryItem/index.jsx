@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
  * Composant affichant une card logement
  * @param {string} title description du logement
  * @param {string} cover url de l'image du logement
+ * @return JSX.element
  */
 function GalleryItem({ accomodationId, title, cover }) {
     return (

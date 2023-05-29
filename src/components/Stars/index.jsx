@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 /**
  * Composant créant des étoiles en fonction de sa notation
  * @param {number} rating un nombre de 0 à 5 correspondant au nombre d'étoile
+ * @return JSX.element
  */
 function Stars({ rating }) {
     let full = [];

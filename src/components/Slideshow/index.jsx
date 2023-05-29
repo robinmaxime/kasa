@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 /**
  * Composant affichant un carroussel d'image
  * @param {array} pictures tableau d'url d'image
+ * @return JSX.element
  */
 function Slideshow({ pictures }) {
     const [index, setIndex] = useState(0);

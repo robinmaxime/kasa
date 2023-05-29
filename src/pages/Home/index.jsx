@@ -3,6 +3,7 @@ import Gallery from "../../components/Gallery";
 
 /**
  * Composant affichant la page d'accueil
+ * @return JSX.element
  */
 function Home() {
     return (

@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
  * Composant créant une boite de texte ouvrable et fermable
  * @param {string} title titre de la boite
  * @param {string} description texte apparant quand la boite est ouverte
+ * @return JSX.element
  */
 function Collapse({ title, description }) {
     const [isOpen, setIsOpen] = useState(false);

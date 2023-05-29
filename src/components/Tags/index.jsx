@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 /**
  * Composant qui affiche une liste de tags en ligne
  * @param {array} list tableau de tags de type string
+ * @return JSX.element
  */
 function Tags({ list }) {
     return (
