@@ -1,30 +1,28 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AccomodationProvider } from "./context";
 import Home from "./pages/Home";
 import Accomodation from "./pages/Accomodation";
 import About from "./pages/About";
 import Error from "./pages/Error";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import MainLayout from "./layouts/MainLayout";
 
+/**
+ * Router principal de l'application
+ * @return JSX.element
+ */
 function Router() {
     return (
         <BrowserRouter>
-            <div className="page-container">
-                <Header />
-                <AccomodationProvider>
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route
-                            path="/accomodation/:accomodationId"
-                            element={<Accomodation />}
-                        />
-                        <Route path="/about" element={<About />} />
-                        <Route path="*" element={<Error />} />
-                    </Routes>
-                </AccomodationProvider>
-            </div>
-            <Footer />
+            <Routes>
+                <Route element={<MainLayout />}>
+                    <Route path="/" element={<Home />} />
+                    <Route
+                        path="/accomodation/:accomodationId"
+                        element={<Accomodation />}
+                    />
+                    <Route path="/about" element={<About />} />
+                    <Route path="*" element={<Error />} />
+                </Route>
+            </Routes>
         </BrowserRouter>
     );
 }
