@@ -6,34 +6,18 @@ import PropTypes from "prop-types";
  * @return JSX.element
  */
 function Stars({ rating }) {
-    let full = [];
-    let empty = [];
-    for (let i = 0; i < rating; i++) {
-        full.push(
+    let stars = [];
+    for (let i = 0; i < 5; i++) {
+        stars.push(
             <img
-                key={`star-${i + 1}`}
                 className="stars__item"
-                src="/assets/star-active.png"
-                alt="étoile pleine"
+                src={`/assets/star-${i < rating ? "active" : "inactive"}.png`}
+                alt={`étoile ${i < rating ? "pleine" : "vide"}`}
             />
         );
     }
-    for (let i = rating; i < 5; i++) {
-        empty.push(
-            <img
-                key={`star-${i + 1}`}
-                className="stars__item"
-                src="/assets/star-inactive.png"
-                alt="étoile vide"
-            />
-        );
-    }
-    return (
-        <div className="stars">
-            {full}
-            {empty}
-        </div>
-    );
+
+    return <div className="stars">{stars}</div>;
 }
 
 Stars.propTypes = {
