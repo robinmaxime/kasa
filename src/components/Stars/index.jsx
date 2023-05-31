@@ -13,6 +13,7 @@ function Stars({ rating }) {
                 className="stars__item"
                 src={`/assets/star-${i < rating ? "active" : "inactive"}.png`}
                 alt={`étoile ${i < rating ? "pleine" : "vide"}`}
+                key={`star-${i + 1}`}
             />
         );
     }
